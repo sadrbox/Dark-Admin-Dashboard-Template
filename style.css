@@ -87,8 +87,8 @@
 .sidemenu a.active {
 	background: var(--main);
 	color: #fff;
-	border-radius: 5px;
-	height: 40px;
+	border-radius: 4px;
+	height: 45px;
 }
 
 .main-content {
@@ -105,9 +105,10 @@ header {
 	align-items: center;
 	background: var(--bg);
 	padding: 0 1rem;
-	left: clac(280px + 0.5rem);
-	right: 0;
+	left: clac(280px + 1rem);
+	right: 1rem;
 	top: 0.5rem;
+	border-radius: 3px;
 }
 
 .menu-toggle {
@@ -118,4 +119,109 @@ header {
 	display: grid;
 	place-items: center;
 	border-radius: 5px;
+}
+
+.search {
+	display: flex;
+	width: 300px;
+	border-radius: 30px;
+	overflow-x: hidden;
+	border: 3px solid #3e454d;
+	place-items: center;
+}
+
+.search span {
+	font-size: 1.3rem;
+	color: #fff;
+	padding-left: 1rem;
+}
+
+.search input {
+	outline: none;
+	border: 0px;
+	flex: 1;
+	height: 42px;
+	height: none;
+	background: transparent;
+	padding: 1rem;
+	color: #fff;
+}
+
+.head-icons span {
+	font-size: 1.5rem;
+	margin-left: 1rem;
+	color: #fff;
+}
+
+main {
+	/* margin-top: calc(70px + 0.5rem); */
+	padding: 1rem 0rem;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 4rem;
+}
+
+.card {
+	background: var(--bg);
+	padding: 2rem 1rem;
+	place-items: center;
+}
+.card-icon {
+	text-align: center;
+	display: grid;
+	place-items: center;
+}
+.card-icon span {
+	height: 50px;
+	width: 50px;
+	color: #fff;
+	font-size: 2rem;
+	border-radius: 6px;
+	display: grid;
+	place-items: center;
+}
+.follow span {
+	color: #0072f2;
+	background: #e5f3fe;
+}
+.likes span {
+	color: #f42a26;
+	background: #fde9ea;
+}
+.comment span {
+	color: #ffbc01;
+	background: #fff8e5;
+}
+.card-info {
+	text-align: center;
+	margin-top: 0.6rem;
+}
+.card-info h2 {
+	font-size: 3rem;
+	color: #efefef;
+}
+.card-info small {
+	display: inline-block;
+	color: var(--main);
+	font-weight: 500;
+}
+.card-images {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.3rem;
+}
+
+.card-images div {
+	height: 30px;
+	width: 30px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	border: 2px solid #efefef;
+	position: relative;
+	left: -10px;
 }
